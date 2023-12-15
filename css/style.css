@@ -44,11 +44,10 @@ h6 {
   --font-1: "Lato", sans-serif;
 }
 body {
-  width: 1440px;
+  width: 98vw;
   height: 1170px;
 }
 header {
-  width: 1360px;
   height: 73px;
   display: flex;
   justify-content: space-between;
@@ -57,7 +56,6 @@ header {
   margin-inline-end: 40px;
   margin-block-start: 28px;
   border-bottom: 2px solid rgba(224, 230, 234, 1);
-  /* border: 1px solid black; */
 }
 nav ul {
   display: flex;
@@ -68,6 +66,12 @@ nav ul {
 nav ul li {
   list-style: none;
   font-family: var(--font-1);
+  font-weight: 700;
+}
+nav ul li a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 .account {
   border: 1px solid black;
@@ -77,6 +81,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 sl-divider {
   margin-inline-start: 42px;
@@ -87,12 +92,10 @@ main {
   width: 892px;
   height: 795px;
   display: flex;
+  margin: 0 auto;
   margin-block-start: 85px;
-  margin-inline-start: 262px;
-  margin-inline-end: 268px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 15px 35px 0px rgba(43, 64, 78, 0.1);
-
 }
 .right {
   width: 580px;
@@ -104,7 +107,7 @@ main {
   height: 795px;
 }
 
-.heading {
+.heading{
   width: 580px;
   height: 80px;
   margin-top: 40px;
@@ -142,14 +145,18 @@ main {
   margin-left: 49px;
   border: none;
   font-family: var(--font-1);
+  border-radius: 4px;
+  font-size: 14px;
 }
 .input-container #lastname:not(label) {
-  width: 227px;
+  width: 226px;
   height: 36px;
   background-color: rgba(237, 239, 242, 1);
   padding-left: 13px;
   text-align: left;
   border: none;
+  border-radius: 4px;
+  font-size: 14px;
 }
 .input-container #email {
   width: 370px;
@@ -159,11 +166,13 @@ main {
   text-align: left;
   margin-left: 49px;
   border: none;
+  border-radius: 4px;
+  font-size: 14px;
 }
 .info {
   display: flex;
   justify-content: space-between;
-  margin-right: 30px;
+  margin-right: 40px;
   margin-top: 9px;
   flex-wrap: wrap;
   font-family: var(--font-1);
@@ -214,12 +223,14 @@ label {
   font-size: 18px;
 }
 .ccinput {
-  width: 438px;
+  width: 484px;
   height: 36px;
   margin-left: 49px;
   padding-left: 13px;
+  border-radius: 4px;
   background-color: rgba(237, 239, 242, 1);
   border: none;
+  font-size: 14px;
 }
 .bottom {
   width: 483px;
@@ -234,13 +245,14 @@ label {
   width: 483px;
   height: 52px;
   text-align: center;
-  background-color: rgba(3, 142, 125, 1);
+  background-color: var(--btn-color);
   color: rgba(255, 255, 255, 1);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 700px;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .stripeimg {
   margin: 0 auto;
@@ -256,7 +268,7 @@ label {
   font-size: 14px;
   line-height: 16.8px;
   font-weight: 700px;
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-1);
 }
 .bottom p span {
   text-decoration: underline;
@@ -273,6 +285,8 @@ i + b {
   margin-bottom: 7px;
 }
 .left {
+  width: 312px;
+  height: 795px;
 }
 .leftwrapper {
   margin-left: 44px;
@@ -283,7 +297,7 @@ i + b {
   height: 152px;
   margin-top: 42px;
   font-family: var(--font-1);
-  color: rgba(218, 218, 218, 1);
+  color: rgba(255, 255, 255, 1);
 }
 .top h1 {
   font-size: 20px;
@@ -320,45 +334,41 @@ i + b {
   word-break: break-word;
 }
 .checkmid {
-   margin-top: 36px;
-   font-family: var(--font-1);
+  margin-top: 36px;
+  font-family: var(--font-1);
 }
 .col {
   color: aliceblue;
 }
-.checktext{
+.checktext {
   margin-left: 11px;
   position: relative;
   bottom: 6px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: rgba(255, 255, 255, 1);
 }
-.middlesec{
-  margin-top: 38px;
-}
-.middlesec{
+
+.middlesec {
   margin-top: 36px;
   font-size: 16px;
   font-weight: 300;
   font-family: var(--font-1);
-  line-height: 19.2px;
   color: rgba(255, 255, 255, 1);
 }
-.switch{
-  text-decoration: underline;
-
+.switch {
+  margin-bottom: -4px;
 }
-.bottomsec{
+.bottomsec {
   width: 229px;
   height: 196px;
+  margin-top: 20px;
   margin-bottom: 154px;
   font-family: var(--font-1);
   color: rgba(255, 255, 255, 1);
-  /* background-color: #fff; */
 }
-.bottomsec p{
+.bottomsec p {
   border-top: 1px solid rgba(255, 255, 255, 1);
   margin-top: 41px;
   padding-top: 43px;
@@ -369,16 +379,34 @@ i + b {
   color: rgba(255, 255, 255, 1);
   font-style: italic;
 }
-.lastdit{
+.lastdit {
   display: flex;
   align-items: center;
-  margin-top: 41px;
-
-  /* margin-bottom: 30px; */
+  margin-top: 25px;
 }
-.lastdit img{
+.lastdit img {
   border-radius: 50%;
 }
-.lastdit h4{
+.lastdit h4 {
   margin-left: 14px;
+font-family: var(--font-1);
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+}
+.bottomtext {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-1);
+  margin-top: 33px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  font-family: var(--font-1);
+}
+.blueline{
+  width: 190px;
+  height: 4px;
+  background-color: #b9f4ff;
+  opacity: 0.5036;
 }
