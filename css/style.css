@@ -44,7 +44,7 @@ h6 {
   --font-1: "Lato", sans-serif;
 }
 body {
-  width: 98vw;
+  width: 100%;
   height: 1170px;
 }
 header {
@@ -68,7 +68,7 @@ nav ul li {
   font-family: var(--font-1);
   font-weight: 700;
 }
-nav ul li a{
+nav ul li a {
   list-style: none;
   text-decoration: none;
   color: black;
@@ -77,16 +77,12 @@ nav ul li a{
   border: 1px solid black;
   width: 91px;
   height: 40px;
+  background: none;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-sl-divider {
-  margin-inline-start: 42px;
-  margin-inline-end: 40px;
-  margin-block-end: 1069px;
 }
 main {
   width: 892px;
@@ -107,7 +103,7 @@ main {
   height: 795px;
 }
 
-.heading{
+.heading {
   width: 580px;
   height: 80px;
   margin-top: 40px;
@@ -117,7 +113,8 @@ main {
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #1d2c3c;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .material-symbols-outlined {
   color: var(--first-bgc);
@@ -253,6 +250,12 @@ label {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.9s;
+}
+.Buy-button:hover{
+  background-color: rgb(6, 100, 89);
+  transform: scale(1.01);
 }
 .stripeimg {
   margin: 0 auto;
@@ -389,14 +392,15 @@ i + b {
 }
 .lastdit h4 {
   margin-left: 14px;
-font-family: var(--font-1);
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
+  font-family: var(--font-1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
 }
 .bottomtext {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: var(--font-1);
   margin-top: 33px;
   font-size: 14px;
@@ -404,9 +408,21 @@ font-weight: 700;
   line-height: 16.8px;
   font-family: var(--font-1);
 }
-.blueline{
+.blueline {
   width: 190px;
   height: 4px;
   background-color: #b9f4ff;
   opacity: 0.5036;
+}
+.errorM {
+  position: relative;
+  top: 3px;
+  left: 49px;
+  font-family: var(--font-1);
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(255, 70, 70);
+}
+.errorsec {
+  height: 3px;
 }

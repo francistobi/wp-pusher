@@ -19,8 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;400;500&family=Lato:wght@100;300;400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/script.js" defer ></script>
   </head>
   <body>
+    <section>
     <header>
       <section class="logo">
         <img src="../asset/wppusher-logo copy (1).png" alt="logo" />
@@ -45,12 +47,12 @@
           </div>
           <div class="info">
             <div class="input-container">
-              <label for="firstName">First Name</label>
+              <label for="firstName" class="firstName">First Name</label>
               <input
                 type="name"
                 id="firstName"
                 name="firstName"
-                placeholder="jane"
+                placeholder="Ebuka"
               />
             </div>
             <div class="input-container">
@@ -58,13 +60,13 @@
               <input
                 type="name"
                 name="lastname"
-                placeholder="doe"
+                placeholder="Francis"
                 id="lastname"
               />
             </div>
             <div class="input-container emailwap">
               <label for="email" class="email">Email</label>
-              <input type="email" name="email" placeholder="doe" id="email" />
+              <input type="email" name="email" placeholder="frobigwe305@gmail.com" id="email" />
             </div>
           </div>
         </div>
@@ -82,6 +84,9 @@
               class="ccinput"
             />
           </div>
+        </div>
+        <div class="errorsec">
+          <p class="errorM"></p>
         </div>
         <div class="bottom">
           <button class="Buy-button">Buy WP Pusher</button>
