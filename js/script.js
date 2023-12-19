@@ -4,10 +4,11 @@ const email = document.getElementById("email");
 const ccDetail = document.querySelector(".ccinput");
 const buyBtn = document.querySelector(".Buy-button");
 const errorMessage = document.querySelector(".errorM");
+//selectring element from the dom to manipulate
 
 buyBtn.addEventListener("click", () => {
   validateinput();
-});
+});//event listener that listens and handle the submittion of the form
 
 function validateinput() {
   if (!firstName.value) {
@@ -43,3 +44,4 @@ function validateinput() {
     errorMessage.textContent= "";
   }
 }
+// validate the input
