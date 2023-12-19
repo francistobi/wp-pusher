@@ -42,6 +42,4 @@ function validateinput() {
     ccDetail.style.border = "none";
     errorMessage.textContent= "";
   }
-  if (!firstName || !lastname || !email || !ccDetail) {
-  }
 }

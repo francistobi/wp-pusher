@@ -255,7 +255,7 @@ label {
 }
 .Buy-button:hover{
   background-color: rgb(6, 100, 89);
-  transform: scale(1.01);
+  transform: scale(1.009);
 }
 .stripeimg {
   margin: 0 auto;
